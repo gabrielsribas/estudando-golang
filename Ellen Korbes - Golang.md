@@ -297,6 +297,7 @@ Capítulos - Canais (Channel)
 	- 21
 
 # Anotações - ...
+	. Canais é uma forma de você trocar informações intra goroutines. É um meio de comunicação entre goroutines e possibilitar a tramissão de informações. Lembrando que a func main também é uma goroutine.
 
 
 # Exercícios realizados

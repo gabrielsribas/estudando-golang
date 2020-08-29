@@ -237,7 +237,7 @@ Capítulos - Concorrência e Ambiente de desenvolvimento
 	- 19  
 	- 20  
 
-# Anotações - Ambiente de desenvolvimento  
+# Anotações - Concorrência e Ambiente de desenvolvimento  
 
 . Concorrência não tem relação com paralelismo. São coisas diferentes.  
 . A concorrência é o design, a forma, o conceito, a forma de pensar, no código que será escrito. Dito isso, a gente escreve código para 
@@ -291,3 +291,12 @@ thread aguardar na fila.
 	4) https://147896@github.com/147896/estudando-golang.git:src/20_exercicios-ninja-9/04/main.go
 	5) https://147896@github.com/147896/estudando-golang.git:src/20_exercicios-ninja-9/05/main.go
 	6) https://147896@github.com/147896/estudando-golang.git:src/20_exercicios-ninja-9/06/main.go
+
+
+Capítulos - Canais (Channel)  
+	- 21
+
+# Anotações - ...
+
+
+# Exercícios realizados

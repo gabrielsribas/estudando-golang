@@ -287,3 +287,6 @@ thread aguardar na fila.
 # Exercícios realizados
 	1) https://147896@github.com/147896/estudando-golang.git:src/20_exercicios-ninja-9/01/main.go
 	2) https://147896@github.com/147896/estudando-golang.git:src/20_exercicios-ninja-9/02/main.go
+	3) https://147896@github.com/147896/estudando-golang.git:src/20_exercicios-ninja-9/03/main.go
+	4) https://147896@github.com/147896/estudando-golang.git:src/20_exercicios-ninja-9/04/main.go
+	5) https://147896@github.com/147896/estudando-golang.git:src/20_exercicios-ninja-9/05/main.go

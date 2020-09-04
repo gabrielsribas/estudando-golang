@@ -293,7 +293,8 @@ thread aguardar na fila.
 	6) https://147896@github.com/147896/estudando-golang.git:src/20_exercicios-ninja-9/06/main.go  
 
 >> Minhas brincadeiras, tentando usar para um contexto prático..  
-https://stackoverflow.com/questions/14668850/list-directory-in-go  
+https://stackoverflow.com/questions/14668850/list-directory-in-go  <- Isso aqui é um bom começo...  
+
 - A ideia aqui é criar uma função que liste o conteúdo de um dado diretório de forma concorrente. Ou seja, para listar um diretório eu não preciso esperar o listar de forma sincrona. Eu coloco isso dentro de uma goroutine function informando um número de wait groups que é exatamente o length da lista retornada.  
 - Outra coisa, é que depois que tivermos um resultado esperado no statement acima. Como estaremos focando em um caso específico. No caso o terraform init -reconfigure e o terraform plan. Precisamos iterar sobre a lista de diretórios acima e rodar esses comandos do terraform também de forma assíncrona usando goroutines.  
 

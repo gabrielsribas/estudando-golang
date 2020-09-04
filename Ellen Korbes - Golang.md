@@ -303,7 +303,9 @@ Capítulos - Canais (Channel)
 	- 21  
 
 # Anotações - ...  
-	. Canais é uma forma de você trocar informações intra goroutines. É um meio de comunicação entre goroutines para possibilitar a transmissão de informações. **Lembrando que a func main também é uma goroutine.**  
+	. Canais é uma forma de você trocar informações intra goroutines. É um meio de comunicação entre goroutines para possibilitar a transmissão de informações.  
+	
+	**Lembrando que a func main também é uma goroutine.**  
 
 	. Canais bidirecionais (send and receiver).  
 	Consultar.: https://stackoverflow.com/questions/13596186/whats-the-point-of-one-way-channels-in-go  
@@ -313,6 +315,10 @@ Capítulos - Canais (Channel)
 
 	. Quando declaro um canal send e um receive uma delas obrigatoriamente precisa ser uma goroutine. Ou seja, precisam concorrer.  
 	. Range e close em canais normalmente são usados. Servem para iterar sobre itens que irão escrever sobre o canal e o close é utilizado após a conclusão do loop para informar para o canal que não existem mais itens a serem enviados.  
+
+	. Exemplos utilizando o https://play.golang.com  
+	# iterando sobre um channel: https://play.golang.com/p/rTaHevkMXMr  
+	# uso do select (similar ao switch case só que para canais): https://play.golang.com/p/wMNdJByPBx-  
 
 
 # Exercícios realizados  

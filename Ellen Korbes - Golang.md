@@ -284,20 +284,34 @@ thread aguardar na fila.
 		  Isso é muito útil para legebilidade do código, visão limpa e organização. Além do conceito DRY para reuso de código.  
 
 
-# Exercícios realizados
-	1) https://147896@github.com/147896/estudando-golang.git:src/20_exercicios-ninja-9/01/main.go
-	2) https://147896@github.com/147896/estudando-golang.git:src/20_exercicios-ninja-9/02/main.go
-	3) https://147896@github.com/147896/estudando-golang.git:src/20_exercicios-ninja-9/03/main.go
-	4) https://147896@github.com/147896/estudando-golang.git:src/20_exercicios-ninja-9/04/main.go
-	5) https://147896@github.com/147896/estudando-golang.git:src/20_exercicios-ninja-9/05/main.go
-	6) https://147896@github.com/147896/estudando-golang.git:src/20_exercicios-ninja-9/06/main.go
+# Exercícios realizados  
+	1) https://147896@github.com/147896/estudando-golang.git:src/20_exercicios-ninja-9/01/main.go  
+	2) https://147896@github.com/147896/estudando-golang.git:src/20_exercicios-ninja-9/02/main.go  
+	3) https://147896@github.com/147896/estudando-golang.git:src/20_exercicios-ninja-9/03/main.go  
+	4) https://147896@github.com/147896/estudando-golang.git:src/20_exercicios-ninja-9/04/main.go  
+	5) https://147896@github.com/147896/estudando-golang.git:src/20_exercicios-ninja-9/05/main.go  
+	6) https://147896@github.com/147896/estudando-golang.git:src/20_exercicios-ninja-9/06/main.go  
+
+>> Minhas brincadeiras, tentando usar para um contexto prático..  
+https://stackoverflow.com/questions/14668850/list-directory-in-go  
+- A ideia aqui é criar uma função que liste o conteúdo de um dado diretório de forma concorrente. Ou seja, para listar um diretório eu não preciso esperar o listar de forma sincrona. Eu coloco isso dentro de uma goroutine function informando um número de wait groups que é exatamente o length da lista retornada.  
+- Outra coisa, é que depois que tivermos um resultado esperado no statement acima. Como estaremos focando em um caso específico. No caso o terraform init -reconfigure e o terraform plan. Precisamos iterar sobre a lista de diretórios acima e rodar esses comandos do terraform também de forma assíncrona usando goroutines.  
 
 
 Capítulos - Canais (Channel)  
-	- 21
+	- 21  
 
-# Anotações - ...
-	. Canais é uma forma de você trocar informações intra goroutines. É um meio de comunicação entre goroutines e possibilitar a tramissão de informações. Lembrando que a func main também é uma goroutine.
+# Anotações - ...  
+	. Canais é uma forma de você trocar informações intra goroutines. É um meio de comunicação entre goroutines para possibilitar a transmissão de informações. **Lembrando que a func main também é uma goroutine.**  
+
+	. Canais bidirecionais (send and receiver).  
+	Consultar.: https://stackoverflow.com/questions/13596186/whats-the-point-of-one-way-channels-in-go  
+	send e receiver são tipos diferentes. Ou seja, existem macanismos para checar os tipos protegendo, de certa forma, a escrita em um canal que é do tipo leitura. E vice-versa.  
+	<-chan == receive  
+	chan<- == send  
+
+	. Quando declaro um canal send e um receive uma delas obrigatoriamente precisa ser uma goroutine. Ou seja, precisam concorrer.  
+	. Range e close em canais normalmente são usados. Servem para iterar sobre itens que irão escrever sobre o canal e o close é utilizado após a conclusão do loop para informar para o canal que não existem mais itens a serem enviados.  
 
 
-# Exercícios realizados
+# Exercícios realizados  

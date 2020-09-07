@@ -318,7 +318,10 @@ Capítulos - Canais (Channel)
 
 	. Exemplos utilizando o https://play.golang.com  
 	# iterando sobre um channel: https://play.golang.com/p/rTaHevkMXMr  
-	# uso do select (similar ao switch case só que para canais): https://play.golang.com/p/wMNdJByPBx-  
-
+	# uso do select (similar ao switch case só que para canais): 
+		1. https://play.golang.com/p/wMNdJByPBx-  
+		2. https://play.golang.com/p/HRgToy4umnZ  
+		3. https://play.golang.com/p/DRuYhJNLf00  <- o select pode tratar multicanais para enviar e/ou receber.
+	
 
 # Exercícios realizados  

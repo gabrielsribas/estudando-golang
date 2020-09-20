@@ -325,3 +325,8 @@ Capítulos - Canais (Channel)
 	
 
 # Exercícios realizados  
+	1) https://play.golang.org/p/xO9iOSsbmWH # com buffer
+	   https://play.golang.org/p/2D84B7z781O # com go func
+	2) https://play.golang.org/p/QHxrG8UEiuq
+	3) http://play.golang.org/p/eoH1ZQC2gQg
+		obs.: fiz e pensei de forma correta. Porém estava retornando o erro deadlock goroutines. Isso porque tinha me esquecido de fechar o channel com close(channel).
